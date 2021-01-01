@@ -322,6 +322,11 @@ function doEdit(tes,isitalic,fntsize){
 
 }
 
+function doList(data){
+    alert(data);
+
+}
+
 function doShit(tes,isitalic,fntsize){
 
     var myColor = getColorpickerColor();

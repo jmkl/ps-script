@@ -15,8 +15,8 @@
 
 
         <div id="content" class="container-fluid mx-auto gap-3">
-            <label>Terimakasih</label>
-            <select id="thanks" class="topcoat-button--large hostFontSize">
+            <label hidden>Terimakasih</label>
+            <select id="thanks" class="topcoat-button--large hostFontSize" hidden>
                 <option value="1">50</option>
                 <option value="2">100</option>
                 <option value="3">150</option>
@@ -38,39 +38,40 @@
                 <option value="19">950</option>
                 <option value="20">1000</option>
             </select>
-            <label>Views</label>
+            <label hidden>Views</label>
 
             <div class="topcoat-button-bar">
-                <div class="topcoat-button-bar__item">
+                <div class="topcoat-button-bar__item" hidden>
                     <button id="btn_test" class="topcoat-button-bar__button--large hostFontSize">Hajar!!!</button>
                 </div>
                 <div class="topcoat-button-bar__item">
-                    <button id="btn_save" class="topcoat-button-bar__button--large hostFontSize">Simpan</button>
+                    <button id="btn_save" class="topcoat-button--large--cta hostFontSize">Simpan</button>
                 </div>
             </div>
-            <br/>
-            <br/>
 
-            <button id="btn_text" class="topcoat-button--large hostFontSize">Text</button>
+            <button id="btn_text" class="topcoat-button--large hostFontSize" hidden>Text</button>
             <div class="topcoat-button-bar w-auto py-2 my-2">
                 <div class="topcoat-button-bar__item"> <button id="btn_color" class="topcoat-button-bar__button--large hostFontSize">Text Col</button></div>
                 <div class="topcoat-button-bar__item"> <button id="btn_colormul" class="topcoat-button-bar__button--large hostFontSize">Bg Col</button></div>
                 <div class="topcoat-button-bar__item"> <button id="btn_split" class="topcoat-button-bar__button--large hostFontSize">Break Texts</button></div>
 
             </div>
-
             <input class="w-100 topcoat-text-input py-2 my-2" id="input_text" placeholder="Put something here">
             <label class="topcoat-checkbox my-2" style="color:aliceblue;">
                 <input type="checkbox" class="isitalic">
                 <div class="topcoat-checkbox__checkmark"></div>
                 italic
               </label>
-            <select id="fntsize" class="topcoat-button--large my-2 hostFontSize">
-                
+            <select id="fntsize" class="topcoat-button--large my-2 hostFontSize">                
             </select>
-            <div class="topcoat-button-bar__item float-right"> <button id="btn_doshit" class="topcoat-button--large--cta hostFontSize">DoShit</button></div>
-            <div class="topcoat-button-bar__item float-right"> <button id="btn_edit" class="topcoat-button--large--cta hostFontSize">Edit</button></div>
-
+            <div class="topcoat-button-bar w-auto py-2 my-2" hidden>
+                <textarea id="txt" class="topcoat-textarea" hidden cols="40" style="font-size: .9em;max-width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;white-space:nowrap;" wrap="soft" placeholder="Hello"></textarea>
+            </div>
+            <div class="topcoat-button-bar w-auto py-2 my-2">
+                <div class="topcoat-button-bar__item float-right"> <button id="btn_doshit" class="topcoat-button--large--cta hostFontSize">Bikin Text</button></div>
+                <div class="topcoat-button-bar__item float-right"> <button id="btn_edit" class="topcoat-button--large--cta hostFontSize">Edit</button></div>
+                <div class="topcoat-button-bar__item float-right"> <button id="btn_dosplit" class="topcoat-button--large--cta hostFontSize">Tamdah</button></div>
+            </div>
         </div>
     </div>
 
@@ -79,6 +80,8 @@
 
     <script src="js/themeManager.js"></script>
     <script src="js/main.js"></script>
+
+
 
 
 </body>

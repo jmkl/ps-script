@@ -48,6 +48,15 @@
             csInterface.evalScript('doEdit(' + '"' + $('#input_text').val() + '",' + $('.isitalic').is(':checked') + ',' + $("#fntsize").val() + ')');
 
         });
+
+        $("#btn_dosplit").click(function() {
+            var mlist = "asd";
+
+            alert(mlist);
+            csInterface.evalScript('doList(' + '"' + mlist + '"' + ')');
+
+        });
+
     }
 
     init();
