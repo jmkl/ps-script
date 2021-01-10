@@ -940,6 +940,9 @@ var idsetd = charIDToTypeID( "setd" );
     var idLyr = charIDToTypeID( "Lyr " );
     desc9326.putObject( idT, idLyr, desc9327 );
 executeAction( idsetd, desc9326, DialogModes.NO );
+
+
+
 var idsetd = charIDToTypeID( "setd" );
     var desc408 = new ActionDescriptor();
     var idnull = charIDToTypeID( "null" );
